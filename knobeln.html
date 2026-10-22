@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Knobelinsel · Lernwelt</title>
+    <link rel="stylesheet" href="css/workshop.css" />
+    <link rel="stylesheet" href="css/knobeln.css" />
+  </head>
+  <body>
+    <header>💡 Lernwelt · Die Knobelinsel</header>
+    <main>
+      <nav class="tools">
+        <a class="button primary" href="index.html">🏠 Startseite</a
+        ><a class="button" href="mathematik.html">🧭 LUFRA · Mathe</a
+        ><button onclick="Knobel.home()">▦ Knobelübersicht</button>
+      </nav>
+      <div class="tools">
+        <label for="profile">Mein Lernplatz</label
+        ><select
+          id="profile"
+          onchange="Knobel.changeProfile(this.value)"
+          style="font: inherit; padding: 14px; border-radius: 12px"
+        ></select
+        ><a class="button wallet" href="avatar.html" id="wallet">Mein Avatar →</a>
+      </div>
+      <section id="game"></section>
+      <footer>
+        Eigene Knobelaufgaben der Lernwelt · Klasse 4. Angeregt durch mathematische Denkaufgaben,
+        wie sie auch beim Känguru-Wettbewerb vorkommen.
+        <a href="https://www.mathe-kaenguru.de/chronik/aufgaben/" target="_blank" rel="noopener"
+          >Offizielles Aufgabenarchiv</a
+        >.
+      </footer>
+    </main>
+    <script src="js/rewards.js"></script>
+    <script src="js/knobeln.js"></script>
+    <script src="js/privacy-notice.js"></script>
+  </body>
+</html>

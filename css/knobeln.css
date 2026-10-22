@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+p {
+  line-height: 1.65;
+}
+
+button:hover,
+.button:hover {
+  border-color: #205f50;
+}
+
+.primary {
+  background: #205f50;
+  color: white;
+  border-color: #205f50;
+}
+
+.mission strong {
+  display: block;
+  font-size: 23px;
+  margin: 12px 0;
+}
+
+.star-row {
+  display: inline-flex;
+  gap: 5px;
+}

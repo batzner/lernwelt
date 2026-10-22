@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Satzdetektive · Klasse 4</title>
+    <link rel="stylesheet" href="css/learning-app.css" />
+    <link rel="stylesheet" href="css/feedback.css" />
+    <link rel="stylesheet" href="css/satzdetektive.css" />
+  </head>
+  <body>
+    <header>
+      <strong>🔎 Satzdetektive</strong
+      ><a href="qr.html" style="text-decoration: none; font-weight: 600">▦ QR-Code</a>
+    </header>
+    <nav class="course-nav" aria-label="Lernnavigation">
+      <a class="home-link" href="index.html">🏠 Startseite<br />Deutsch &amp; Mathe</a
+      ><button
+        onclick="
+          learningApp.home();
+          document.getElementById('game').scrollIntoView({ block: 'start', behavior: 'smooth' });
+        "
+      >
+        ▦ Übungsübersicht</button
+      ><a class="reading-link" href="lesen.html">📖 Lesemissionen</a
+      ><a class="math-link" href="mathematik.html">🧭 LUFRA · Mathe</a>
+    </nav>
+    <main>
+      <div class="profile">
+        <label for="profile">🧑‍🚀 Mein Lernplatz</label
+        ><select id="profile" onchange="learningApp.changeProfile(this.value)"></select
+        ><button onclick="learningApp.home()">⌂ Lernübersicht</button>
+      </div>
+      <div id="avatar-mini" class="avatar-mini"></div>
+      <div id="stats" class="stats"></div>
+      <details class="voice-settings">
+        <summary>🔊 Stimme und Lesetempo</summary>
+        <div class="tools">
+          <label for="voice-select">Stimme auf diesem Gerät</label
+          ><select id="voice-select" onchange="learningApp.changeVoice(this.value)"></select
+          ><label for="voice-rate">Tempo</label
+          ><select id="voice-rate" onchange="learningApp.changeRate(this.value)">
+            <option value="0.8">Langsam</option>
+            <option value="0.95">Ruhig</option>
+            <option value="1.1">Zügig</option></select
+          ><button onclick="learningApp.previewVoice()">▶ Hörprobe</button
+          ><button onclick="learningApp.voiceContinue()">▶ Weiter vorlesen</button
+          ><button onclick="learningApp.voiceStop()">◼ Stopp</button>
+        </div>
+        <p id="voice-note" class="small" role="status"></p>
+      </details>
+      <span class="tag">DEINE MISSION</span>
+      <h1>Dein Training.<br />Deine Sterne.</h1>
+      <p>
+        Finde das <b>Subjekt</b> und das <b>Prädikat</b>. Tippe die passenden Wörter an.<br />Ein
+        Satzglied kann aus mehreren Wörtern bestehen!
+      </p>
+      <nav id="nav">
+        <button onclick="learningApp.start('s')">1 · Subjekt</button
+        ><button onclick="learningApp.start('p')">2 · Prädikat</button
+        ><button onclick="learningApp.start('b')">3 · Beide</button>
+      </nav>
+      <section class="card" id="game"></section>
+      <details>
+        <summary><b>So geht’s · Merkhilfe</b></summary>
+        <p>
+          🔵 <b>Subjekt:</b> Frage „Wer oder was …?“ Markiere die ganze Antwort:
+          <b>Der kleine Hund</b> bellt.<br />🟠 <b>Prädikat:</b> Es sagt, was geschieht oder was
+          jemand tut. Es enthält die Verbform(en): Mia <b>hat</b> ein Buch <b>gelesen</b>. Markiere
+          hier beide Teile.
+        </p>
+        <p>
+          Tippe ein markiertes Wort erneut an, um die Markierung zu entfernen. Bei „Beide“ wählst du
+          zuerst deine Farbe.
+        </p>
+      </details>
+      <details>
+        <summary><b>Für die Lehrkraft · Sätze zum Einsprechen</b></summary>
+        <p>Lies die Sätze der Reihe nach vor. Lass zwischen den Sätzen etwa zwei Sekunden Pause.</p>
+        <ol id="record" class="record"></ol>
+      </details>
+      <div class="links">
+        <a href="lesen.html">📖 Lesemissionen</a><a href="mathematik.html">🧭 LUFRA · Mathe</a
+        ><a href="index.html">🏠 Startseite</a>
+      </div>
+      <footer>
+        Ohne Zeitdruck · Keine Namen oder Anmeldung in der Übung · Ergebnisse bleiben auf diesem
+        Gerät
+      </footer>
+    </main>
+    <script src="js/rewards.js"></script>
+    <script src="js/voice.js"></script>
+    <script src="js/feedback.js"></script>
+    <script src="js/satzdetektive.js"></script>
+    <script src="js/privacy-notice.js"></script>
+  </body>
+</html>

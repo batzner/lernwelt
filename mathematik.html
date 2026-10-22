@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="LUFRA · Mathemissionen – digitale Übungen mit Punkten, Sternen und Tipps."
+    />
+    <title>LUFRA · Mathemissionen</title>
+    <link rel="stylesheet" href="css/missions.css" />
+    <link rel="stylesheet" href="css/learning-app.css" />
+    <link rel="stylesheet" href="css/feedback.css" />
+    <link rel="stylesheet" href="css/mathematik.css" />
+  </head>
+  <body>
+    <header>
+      <strong class="brand">🧭 LUFRA · Mathemissionen</strong><a href="qr.html">▦ QR-Code</a>
+    </header>
+    <nav class="course-nav" aria-label="Lernnavigation">
+      <a class="home-link" href="index.html">🏠 Startseite<br />Deutsch &amp; Mathe</a
+      ><button
+        onclick="
+          learningApp.home();
+          document.getElementById('game').scrollIntoView({ block: 'start', behavior: 'smooth' });
+        "
+      >
+        ▦ Übungsübersicht</button
+      ><a class="reading-link" href="lesen.html">📖 Lesemissionen</a
+      ><a class="math-link" href="mathematik.html" aria-current="page">🧭 LUFRA · Mathe</a>
+    </nav>
+    <main>
+      <div class="profile">
+        <label for="profile">🧑‍🚀 Mein Lernplatz</label
+        ><select id="profile" onchange="learningApp.changeProfile(this.value)"></select
+        ><button onclick="learningApp.home()">⌂ Lernübersicht</button>
+      </div>
+      <div id="avatar-mini" class="avatar-mini"></div>
+      <div id="stats" class="stats"></div>
+      <details class="voice-settings">
+        <summary>🔊 Stimme und Lesetempo</summary>
+        <div class="tools">
+          <label for="voice-select">Stimme auf diesem Gerät</label
+          ><select id="voice-select" onchange="learningApp.changeVoice(this.value)"></select
+          ><label for="voice-rate">Tempo</label
+          ><select id="voice-rate" onchange="learningApp.changeRate(this.value)">
+            <option value="0.8">Langsam</option>
+            <option value="0.95">Ruhig</option>
+            <option value="1.1">Zügig</option></select
+          ><button onclick="learningApp.previewVoice()">▶ Hörprobe</button
+          ><button onclick="learningApp.voiceContinue()">▶ Weiter vorlesen</button
+          ><button onclick="learningApp.voiceStop()">◼ Stopp</button>
+        </div>
+        <p id="voice-note" class="small" role="status"></p>
+      </details>
+      <span class="eyebrow">MATHEMATIK · KLASSE 4</span>
+      <h1>Große Aufgaben.<br />Fünf klare Schritte.</h1>
+      <p>
+        Lesen. Unterstreichen. Fragen. Rechnen. Antworten.<br />Knacke Sachaufgaben und sammle deine
+        Sterne.
+      </p>
+      <section id="game"><p>Die Übungen werden geladen …</p></section>
+      <p id="storage-note"></p>
+      <div class="tools">
+        <button onclick="learningApp.voiceContinue()">▶ Weiter vorlesen</button
+        ><button onclick="learningApp.stopAudio()">◼ Vorlesen stoppen</button
+        ><span id="audio-status" class="status" role="status" aria-live="polite"></span>
+      </div>
+      <details>
+        <summary>Für die Lehrkraft · Konzept und Einsatz</summary>
+        <p>
+          Mathematik 3/4, 1.3: Sachsituationen und Mathematik in Beziehung setzen. Die Aufgaben
+          trainieren das Entnehmen relevanter Angaben, mehrschrittige Rechenwege, Geld, Zeit und
+          Strecken. LUFRA dient hier als Lösungsstrategie.
+        </p>
+        <p>
+          <a
+            href="https://www.lehrplanplus.bayern.de/fachlehrplan/grundschule/4/mathematik"
+            target="_blank"
+            rel="noopener"
+            >Fachliche Grundlage öffnen</a
+          >
+        </p>
+        <p>
+          Die Lernplätze speichern Punkte und Sterne ausschließlich im Browser. Ein Lernplatz ist
+          keine Anmeldung. Auf gemeinsam genutzten Geräten können Kinder andere Lernplätze
+          auswählen. Es gibt keine zentrale Klassenübersicht und keinen geräteübergreifenden
+          Abgleich.
+        </p>
+        <p>
+          Vorlesen verwendet die Gerätestimme. Zum eigenständigen Lesetraining kann die
+          Unterstützung bewusst erst nach einem eigenen Leseversuch eingesetzt werden.
+        </p>
+      </details>
+      <div class="links">
+        <a href="mathematik.html">🧭 LUFRA</a><a href="lesen.html">📖 Lesemissionen</a
+        ><a href="satzdetektive.html">🔎 Satzdetektive</a>
+      </div>
+      <footer>Ohne Zeitdruck · Ohne Namen oder Schülerkonten · Tipps sind immer erlaubt</footer>
+    </main>
+    <script src="js/privacy-notice.js"></script>
+    <script src="js/rewards.js"></script>
+    <script src="js/voice.js"></script>
+    <script src="js/feedback.js"></script>
+    <script src="js/mathematik.js"></script>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+/* "Unsere Lernwelt" brand in the page header, links back to the start page. */
+.brand-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 48px;
+  padding: 10px 16px;
+  border: 2px solid #d5dfd6;
+  border-radius: 14px;
+  background: white;
+  color: #183e40;
+  font:
+    800 22px/1.2 system-ui,
+    -apple-system,
+    sans-serif;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.brand-link:hover {
+  border-color: #205f50;
+}
+.brand-link:focus-visible {
+  outline: 4px solid #cf7300;
+  outline-offset: 4px;
+}
+/* Keep the header buttons on one line each. */
+.brand-link ~ a {
+  white-space: nowrap;
+}
+@media (max-width: 650px) {
+  .brand-link {
+    min-height: 44px;
+    padding: 8px 12px;
+    font-size: 17px;
+  }
+}
