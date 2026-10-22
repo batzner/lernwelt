@@ -1,0 +1,14 @@
+.listening-lesson [hidden] { display:none !important; }
+.listening-steps { list-style:none; display:grid; grid-template-columns:repeat(auto-fit,minmax(145px,1fr)); padding:0; gap:8px; }
+.listening-steps li { padding:12px; background:#eff4f1; border:2px solid #d3e1dc; border-radius:12px; font-weight:700; }
+.listening-steps li[aria-current="step"] { background:#205f50; border-color:#205f50; color:white; }
+.listening-instruction { border-left:5px solid #205f50; padding:12px 16px; background:#f0f7f2; margin:20px 0; }
+.listening-instruction h3 { margin-top:0; }
+.listening-instruction p { margin-bottom:0; }
+.listening-tips li { margin:10px 0; }
+.listening-timer { border:2px solid #b9cfc3; padding:14px; border-radius:14px; margin:20px 0; background:#f8f8e8; }
+#listening-time { font-size:1.5rem; font-variant-numeric:tabular-nums; white-space:nowrap; }
+.listening-lesson audio { width:100%; max-width:100%; }
+.listening-lesson button, .listening-lesson select { max-width:100%; overflow-wrap:anywhere; }
+.listening-source { font-size:.9rem; margin-top:26px; }
+.listening-source a { overflow-wrap:anywhere; }

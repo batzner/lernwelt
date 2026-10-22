@@ -1,0 +1,8 @@
+main { overflow-wrap:anywhere; }
+button { max-width:100%; }
+.play-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:10px; width:min(100%,330px); margin:20px auto; }
+.play-grid button { min-height:80px; font-size:1.4rem; }
+.light-on { background:#ffe083; border-color:#946d0a; }
+.light-off { background:#344b57; color:white; }
+.choice-list { flex-direction:column; align-items:stretch; }
+dialogue,p { line-height:1.6; }

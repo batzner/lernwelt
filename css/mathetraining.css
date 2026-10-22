@@ -1,0 +1,18 @@
+.mathe-werte { border-collapse:collapse; margin:1rem 0; }
+.mathe-werte :is(th,td) { border:1px solid #8aab9c; padding:.55rem .8rem; text-align:left; }
+.mathe-werte th { background:#e1f0e6; color:#263e32; }
+
+#aufgabe {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+#frage {
+  white-space: pre-line;
+  word-break: normal;
+  font-size: clamp(1.25rem, 4.5vw, 1.8rem);
+  line-height: 1.35;
+}
+#aufgabe button, #themen button {
+  max-width: 100%;
+  overflow-wrap: anywhere;
+}

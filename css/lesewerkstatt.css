@@ -1,0 +1,202 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+p {
+  line-height: 1.65;
+}
+
+button:hover,
+.button:hover {
+  border-color: #205f50;
+}
+
+.primary {
+  background: #205f50;
+  color: white;
+  border-color: #205f50;
+}
+
+.mission strong {
+  display: block;
+  font-size: 23px;
+  margin: 12px 0;
+}
+
+.star-row {
+  display: inline-flex;
+  gap: 5px;
+}
+
+.task-question {
+  display: block;
+  font-size: 24px;
+  font-weight: 800;
+  margin: 0 0 12px;
+}
+
+.story .text-paragraph {
+  padding: 8px 0;
+  border-bottom: 1px solid #dce4d7;
+}
+
+.story button {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.sentence-number {
+  font-size: 14px;
+  font-weight: 800;
+  min-width: 24px;
+  color: #586f59;
+  padding-top: 6px;
+}
+
+.task-stars {
+  display: grid;
+  grid-template-columns: repeat(4, 32px);
+  gap: 5px;
+}
+
+.self-check {
+  border: 2px solid #afc9a8;
+  background: #eff6eb;
+  border-radius: 14px;
+  padding: 18px;
+  margin: 18px 0;
+  line-height: 1.7;
+}
+
+.self-check input {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+}
+
+.task {
+  scroll-margin-top: 16px;
+}
+
+.task:focus {
+  outline: 3px solid #6557a0;
+  outline-offset: 3px;
+}
+
+.truth-rows fieldset {
+  border: 2px solid #d3dfd2;
+  border-radius: 14px;
+  margin: 0 0 18px;
+  padding: 14px;
+  min-width: 0;
+}
+
+.truth-rows legend {
+  font-weight: 750;
+  padding: 0 6px;
+  line-height: 1.5;
+}
+
+.truth-rows .tools {
+  margin: 8px 0 0;
+}
+
+.word-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 20px 0;
+}
+
+.word-token {
+  font-size: 20px;
+  padding: 10px;
+  min-width: 44px;
+}
+
+.word-token.picked {
+  text-decoration: line-through;
+  text-decoration-thickness: 3px;
+  background: #fff0d5;
+  color: #6d3d0c;
+}
+
+.word-fields {
+  display: grid;
+  gap: 12px;
+  margin: 20px 0;
+}
+
+.word-fields input {
+  font: inherit;
+  font-size: 22px;
+  width: 100%;
+  min-height: 54px;
+  padding: 12px;
+  border: 2px solid #8aa08e;
+  border-radius: 12px;
+}
+
+.word-fields input:focus-visible {
+  outline: 3px solid #574a98;
+  outline-offset: 2px;
+}
+
+.truth-rows button.picked {
+  background: #e5e1fa;
+  border-color: #6c5ba1;
+  color: #34255d;
+  box-shadow: inset 0 0 0 1px #6c5ba1;
+}
+
+.truth-rows button.picked::before {
+  content: "●";
+  font-weight: 900;
+}
+
+.truth-rows button.correct {
+  background: #dcf2d9;
+  border-color: #24723b;
+  color: #215a2d;
+  box-shadow: inset 0 0 0 1px #24723b;
+}
+
+.truth-rows button.picked:disabled:not(.correct) {
+  background: #ffe2dd;
+  border-color: #bc5b46;
+  color: #852c20;
+  box-shadow: none;
+}
+
+.field-feedback {
+  margin: 0;
+  font-size: 16px;
+  min-height: 24px;
+}
+
+.field-feedback.good {
+  color: #215a2d;
+  background: #ddf2d9;
+  padding: 8px 12px;
+  border-radius: 8px;
+}
+
+.field-feedback.bad {
+  color: #852c20;
+  background: #ffe2dd;
+  padding: 8px 12px;
+  border-radius: 8px;
+}
+
+.word-fields input[aria-invalid="true"] {
+  border-color: #bc5b46;
+}
+
+.word-fields input[aria-invalid="false"] {
+  border-color: #468449;
+}

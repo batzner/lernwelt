@@ -1,0 +1,250 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  background: #f4f4eb;
+  color: #183e40;
+  font-family:
+    system-ui,
+    -apple-system,
+    sans-serif;
+}
+header {
+  padding: 22px 5vw;
+  border-bottom: 1px solid #d5dfd6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+header strong {
+  font-size: 22px;
+}
+a {
+  color: inherit;
+}
+header a {
+  white-space: nowrap;
+  padding: 12px 18px;
+  border-radius: 14px;
+  background: white;
+  text-decoration: none;
+  font-weight: 700;
+}
+main {
+  max-width: 1120px;
+  margin: auto;
+  padding: 42px 24px;
+}
+.eyebrow {
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: #547768;
+}
+h1 {
+  font-size: clamp(38px, 6vw, 66px);
+  line-height: 1.08;
+  margin: 16px 0;
+}
+p {
+  line-height: 1.65;
+  font-size: 19px;
+}
+.subjects {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px;
+  margin: 32px 0 48px;
+}
+.subject {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  min-height: 240px;
+  padding: 32px;
+  border-radius: 28px;
+  text-decoration: none;
+  border: 3px solid transparent;
+  box-shadow: 0 10px 30px #183e4010;
+}
+.subject .icon {
+  font-size: 50px;
+}
+.subject strong {
+  font-size: 36px;
+  margin: 12px 0;
+}
+.subject span {
+  font-size: 20px;
+  font-weight: 600;
+}
+.german {
+  background: #e8e4f6;
+  border-color: #c2b7e0;
+}
+.math {
+  background: #ffedc3;
+  border-color: #dfba64;
+}
+.section {
+  scroll-margin-top: 22px;
+  margin-bottom: 36px;
+}
+h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.courses {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+#deutsch .courses {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.course.workshop-course {
+  background: #fff0d5;
+  border-color: #c69239;
+}
+.workshop-course .launch {
+  background: #855014;
+}
+.course.reading-course {
+  background: #edf3ff;
+  border-color: #8ba7d8;
+}
+.reading-course .launch {
+  background: #375c96;
+}
+.course.sentence-course {
+  background: #eee9fa;
+  border-color: #b29bd4;
+}
+.sentence-course .launch {
+  background: #67508b;
+}
+@media (max-width: 900px) {
+  #deutsch .courses {
+    grid-template-columns: 1fr;
+  }
+}
+.course {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 250px;
+  padding: 28px;
+  background: white;
+  border: 2px solid #d7e1d7;
+  border-radius: 24px;
+  text-decoration: none;
+  box-shadow: 0 5px 20px #183e4008;
+}
+.course h3 {
+  font-size: 28px;
+  margin: 12px 0;
+}
+.course p {
+  font-size: 17px;
+  margin: 0 0 22px;
+}
+.launch {
+  display: block;
+  background: #205f50;
+  color: white;
+  padding: 18px;
+  border-radius: 14px;
+  text-align: center;
+  font-weight: 800;
+  font-size: 21px;
+}
+.course:hover,
+.course:focus-visible {
+  border-color: #205f50;
+}
+.course.math-course {
+  max-width: 540px;
+}
+.note {
+  background: #e5ede6;
+  padding: 20px 24px;
+  border-radius: 18px;
+  margin-top: 32px;
+}
+.note p {
+  font-size: 16px;
+  margin: 0;
+}
+footer {
+  font-size: 14px;
+  color: #637970;
+  margin: 30px 0;
+}
+a:focus-visible {
+  outline: 4px solid #cf7300;
+  outline-offset: 4px;
+}
+.top {
+  display: inline-block;
+  padding: 15px 20px;
+  min-height: 56px;
+  border-radius: 14px;
+  background: #e3ebe4;
+  text-decoration: none;
+  font-weight: 700;
+  margin-top: 16px;
+}
+@media (max-width: 650px) {
+  main {
+    padding: 30px 18px;
+  }
+  .subjects,
+  .courses {
+    grid-template-columns: 1fr;
+  }
+  .subject {
+    min-height: 190px;
+    padding: 26px;
+  }
+  .subject strong {
+    font-size: 32px;
+  }
+  .subjects {
+    gap: 16px;
+  }
+  header {
+    padding: 18px;
+  }
+  header strong {
+    font-size: 18px;
+  }
+  .course {
+    min-height: 220px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+.course.hard-course {
+  background: #e5edf6;
+  border-color: #9bb3cc;
+}
+.hard-course .launch {
+  background: #315e79;
+}
+
+.course.tables-course {
+  background: #e0f1ed;
+  border-color: #72a99b;
+}
+.tables-course .launch {
+  background: #236857;
+}

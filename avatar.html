@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Mein Avatar · Unsere Lernwelt</title>
+    <link rel="stylesheet" href="css/feedback.css" />
+    <link rel="stylesheet" href="css/avatar.css?v=haare />
+    <link rel="stylesheet" href="css/brand.css" />
+  </head>
+  <body>
+    <header>
+      <a class="brand-link" href="index.html" aria-label="Unsere Lernwelt – zur Startseite"
+        >🌟 Unsere Lernwelt</a
+      ><a class="back" href="index.html">🏠 Startseite</a>
+    </header>
+    <main>
+      <div class="profile">
+        <label hidden style="display:none" for="avatar-profile">🧑‍🚀 Mein Lernplatz</label
+        ><select hidden style="display:none" id="avatar-profile" onchange="AvatarShop.changeProfile(this.value)"></select>
+      </div>
+      <h1>Gestalte deinen Avatar</h1>
+      <section
+        style="
+          background: #fff1cc;
+          border: 2px solid #d9bc72;
+          border-radius: 20px;
+          padding: 22px;
+          margin: 22px 0;
+        "
+      >
+        <h2 style="margin-top: 0">Dein Avatar ist fertig? Baue deine Welt!</h2>
+        <p>
+          Sammle weiter Sterne. Gestalte ein Zuhause, Tiere und weitere Figuren. Ein kleines
+          Merkspiel wartet auch auf dich.
+        </p>
+        <a class="back" href="welt.html">🏡 Meine Avatar-Welt öffnen →</a>
+      </section>
+      <p>
+        Sammle Sterne in Deutsch und Mathematik. Schalte damit Zubehör frei und probiere
+        verschiedene Looks aus.
+      </p>
+      <div id="shop-summary" class="summary"></div>
+      <div class="avatar-shop">
+        <section class="avatar-preview">
+          <div id="avatar-portrait"></div>
+          <h2>Deine Haare · kostenlos</h2>
+          <p>Wähle Länge, Frisur und Farbe. Du kannst alles jederzeit ändern.</p>
+          <label for="hair-length">Haarlänge</label>
+          <select id="hair-length"><option value="short">Kurz</option><option value="medium">Mittellang</option><option value="long">Lang</option></select>
+          <label for="hair-style">Frisur</label>
+          <select id="hair-style"><option value="straight">Glatt</option><option value="curls">Locken</option><option value="spikes">Strubbelig</option><option value="ponytail">Pferdeschwanz</option><option value="bun">Dutt</option><option value="none">Ohne Haare</option></select>
+          <p>Haarfarbe</p><div id="hair-colors" class="palette" aria-label="Haarfarbe"></div>
+          <p class="small">Eine Kappe oder Krone kann einen Teil deiner Frisur verdecken.</p>
+          <h2>Farben · kostenlos</h2>
+          <p>Wähle Hautfarbe und Kleidung.</p>
+          <div id="skin-colors" class="palette" aria-label="Hautfarbe"></div>
+          <div id="shirt-colors" class="palette" aria-label="Kleidungsfarbe"></div>
+        </section>
+        <section>
+          <h2>Dein Zubehör</h2>
+          <p>
+            Einmal freigeschaltet, kannst du Zubehör immer wieder an- und ausziehen. Die Sterne
+            werden nur beim Freischalten ausgegeben.
+          </p>
+          <div id="shop-items" class="shop-items"></div>
+        </section>
+      </div>
+      <p id="shop-status" class="shop-status" role="status" aria-live="polite">
+        Farben sind frei. Wofür möchtest du deine Sterne sammeln?
+      </p>
+      <p class="small">
+        Deine bisher verdienten Sterne bleiben als Lernerfolg sichtbar. Dein Avatar und dein
+        Guthaben werden in diesem Browser gespeichert.
+      </p>
+      <a class="back" href="index.html">Neue Sterne sammeln →</a>
+    </main>
+    <script src="js/rewards.js?v=extras"></script>
+    <script src="js/avatar.js?v=ohne-lernplatz"></script>
+    <script src="js/privacy-notice.js"></script>
+  </body>
+</html>
