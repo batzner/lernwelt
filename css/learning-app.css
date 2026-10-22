@@ -1,0 +1,269 @@
+.stat b {
+  display: block;
+  font-size: 28px;
+}
+
+.small {
+  font-size: 14px;
+  color: #5f746d;
+}
+
+.mission {
+  text-align: left;
+  background: white;
+  border: 2px solid #dce6dc;
+  padding: 24px;
+  box-shadow: 0 5px 15px #183e4008;
+}
+
+.bar div {
+  height: 100%;
+  background: #d6a03a;
+  border-radius: 10px;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+.profile {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 4px 16px #183e4010;
+}
+
+.voice-settings {
+  background: #fff;
+  border-radius: 16px;
+  padding: 14px 20px;
+  margin: 18px 0;
+}
+
+.voice-settings select {
+  max-width: 100%;
+  font: inherit;
+  padding: 12px;
+  border-radius: 10px;
+}
+
+.wide {
+  display: block;
+  width: 100%;
+  font: inherit;
+  padding: 12px;
+  border: 1px solid #b8cbbf;
+  border-radius: 10px;
+  margin: 8px 0 20px;
+  color: #183e40;
+  background: white;
+}
+
+.selfcheck {
+  display: block;
+  line-height: 1.6;
+  margin: 14px 0;
+}
+
+.selfcheck input {
+  width: 22px;
+  height: 22px;
+  vertical-align: middle;
+}
+
+.concept-map {
+  padding: 22px;
+  border-radius: 20px;
+  background: #f3f1fa;
+}
+
+.map-center {
+  max-width: 360px;
+  margin: 0 auto 26px;
+  padding: 18px;
+  background: #4c4b86;
+  color: white;
+  border-radius: 16px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.map-center input {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.map-branches {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.map-branch {
+  position: relative;
+  background: white;
+  padding: 20px;
+  border-radius: 16px;
+  border-top: 5px solid #b0a8d5;
+}
+
+.map-branch:before {
+  content: "";
+  position: absolute;
+  height: 24px;
+  width: 2px;
+  background: #b0a8d5;
+  top: -29px;
+  left: 50%;
+}
+
+.map-branch input {
+  width: 100%;
+  margin-top: 12px;
+}
+
+.warmup {
+  background: #fff4dc;
+  border-radius: 20px;
+  padding: 22px;
+  margin: 22px 0;
+}
+
+@media (max-width: 700px) {
+  .map-branches {
+    grid-template-columns: 1fr;
+  }
+  .map-branch:before {
+    display: none;
+  }
+}
+
+.course-nav {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+  padding: 14px 4vw;
+  background: #f4f4eb;
+  border-bottom: 2px solid #d3dfd4;
+  box-shadow: 0 4px 16px #183e4012;
+}
+
+.course-nav a,
+.course-nav button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 72px;
+  border-radius: 16px;
+  padding: 16px 12px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 1.3;
+  text-align: center;
+  background: #e4ece5;
+  color: #183e40;
+  border: 2px solid #bbcfc0;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.course-nav .home-link {
+  background: #205f50;
+  color: white;
+  border-color: #205f50;
+}
+
+.course-nav .reading-link {
+  background: #eceaf7;
+  border-color: #c0b8e0;
+}
+
+.course-nav .math-link {
+  background: #fff0d0;
+  border-color: #dfbe71;
+}
+
+.course-nav a[aria-current="page"] {
+  outline: 3px solid #183e40;
+  outline-offset: -6px;
+}
+
+.course-nav a:focus-visible,
+.course-nav button:focus-visible {
+  outline: 4px solid #cf7300;
+  outline-offset: 2px;
+}
+
+.profile {
+  position: static !important;
+}
+
+.profile button {
+  min-height: 64px !important;
+  padding: 16px 24px !important;
+  font-size: 20px !important;
+  font-weight: 800 !important;
+  background: #205f50 !important;
+  color: white !important;
+}
+
+#game {
+  scroll-margin-top: 180px;
+}
+
+.links {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.links a {
+  display: flex;
+  min-height: 72px;
+  align-items: center;
+  justify-content: center;
+  padding: 18px;
+  border-radius: 16px;
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 21px;
+  background: #e4ece5;
+  border: 2px solid #bbcfc0;
+  text-align: center;
+}
+
+@media (max-width: 700px) {
+  .course-nav {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+    padding: 10px 12px;
+  }
+  .course-nav a,
+  .course-nav button {
+    font-size: 17px;
+    min-height: 64px;
+    padding: 12px 8px;
+  }
+  .links {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media print {
+  .course-nav {
+    display: none;
+  }
+}
+
+.mission .star-row {
+  display: inline-flex;
+}

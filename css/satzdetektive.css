@@ -1,0 +1,294 @@
+:root {
+  font-family: system-ui, sans-serif;
+  color: #183e40;
+  background: #f4f4eb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  padding: 22px 6vw;
+  border-bottom: 1px solid #d5dfd6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button {
+  font: inherit;
+  cursor: pointer;
+  border: 0;
+  border-radius: 14px;
+  padding: 14px 20px;
+  min-height: 48px;
+  background: #e4ebe5;
+  color: #183e40;
+}
+
+button:focus-visible {
+  outline: 3px solid #cf7300;
+  outline-offset: 3px;
+}
+
+main {
+  max-width: 960px;
+  margin: auto;
+  padding: 36px 24px;
+}
+
+.tag {
+  font-size: 13px;
+  letter-spacing: 2px;
+  font-weight: 800;
+  color: #4d7664;
+}
+
+h1 {
+  font-size: clamp(36px, 6vw, 62px);
+  line-height: 1.08;
+  margin: 15px 0;
+}
+
+p {
+  line-height: 1.65;
+}
+
+nav {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 26px 0;
+}
+
+nav button.active,
+.primary {
+  background: #205f50;
+  color: white;
+}
+
+.card {
+  background: white;
+  border-radius: 26px;
+  padding: clamp(22px, 4vw, 42px);
+  box-shadow: 0 10px 40px #153f3010;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+}
+
+.bar {
+  height: 8px;
+  background: #e6ede6;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+h2 {
+  font-size: 25px;
+  margin: 22px 0 6px;
+}
+
+.words {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 32px 0;
+}
+
+.word {
+  font-size: clamp(21px, 3vw, 28px);
+  background: #f4f5ef;
+  border: 2px solid transparent;
+}
+
+.word.s {
+  background: #d9eafa;
+  border-color: #4779a9;
+  color: #214d7b;
+}
+
+.word.p {
+  background: #fbe2d8;
+  border-color: #c26749;
+  color: #853b28;
+}
+
+.tools {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.hint,
+.feedback {
+  margin: 20px 0;
+  padding: 16px;
+  border-radius: 14px;
+  line-height: 1.6;
+}
+
+.hint {
+  background: #fff5d9;
+}
+
+.feedback {
+  background: #edf3ee;
+  min-height: 58px;
+}
+
+footer {
+  margin: 24px 0;
+  font-size: 13px;
+  color: #637970;
+}
+
+details {
+  margin-top: 24px;
+  line-height: 1.7;
+}
+
+summary {
+  cursor: pointer;
+}
+
+#brush button {
+  margin-right: 8px;
+}
+
+#brush .active {
+  outline: 3px solid #183e40;
+}
+
+button:disabled {
+  opacity: 0.55;
+  cursor: default;
+}
+
+.finish {
+  text-align: center;
+  padding: 30px 0;
+}
+
+.finish h2 {
+  font-size: 36px;
+}
+
+a {
+  color: #205f50;
+}
+
+@media (max-width: 550px) {
+  header {
+    padding: 16px 24px;
+  }
+  main {
+    padding-top: 25px;
+  }
+  nav button {
+    flex: 1;
+    padding: 12px 8px;
+    font-size: 14px;
+  }
+  .top {
+    align-items: flex-start;
+  }
+  .words {
+    gap: 7px;
+  }
+  .word {
+    padding: 12px;
+  }
+  .tools button {
+    flex: 1;
+  }
+}
+
+.stats {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 24px 0;
+}
+
+.stat {
+  background: white;
+  border-radius: 18px;
+  padding: 15px 22px;
+  flex: 1;
+  min-width: 130px;
+}
+
+.missions {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  margin: 24px 0;
+}
+
+.mission:hover {
+  border-color: #205f50;
+}
+
+.mission strong {
+  display: block;
+  font-size: 22px;
+  margin: 12px 0;
+}
+
+.mission span {
+  display: block;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  background: #e5ede6;
+  padding: 15px;
+  border-radius: 16px;
+}
+
+select {
+  font: inherit;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #b8cbbf;
+  background: white;
+}
+
+.badge {
+  display: inline-block;
+  background: #fff4d6;
+  border-radius: 20px;
+  padding: 8px 14px;
+  margin: 5px;
+}
+
+.record {
+  line-height: 1.9;
+}
+
+#nav {
+  display: none;
+}
+
+@media print {
+  header,
+  .stats,
+  .profile,
+  #game,
+  .controls {
+    display: none;
+  }
+}

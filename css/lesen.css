@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+p {
+  line-height: 1.65;
+}
+
+.mission strong {
+  display: block;
+  font-size: 23px;
+  margin: 12px 0;
+}
+
+:root {
+  --accent: #4c4b86;
+  --soft: #eceaf7;
+}
+
+.paragraph {
+  cursor: default;
+}
+
+.sentence {
+  display: block;
+  width: 100%;
+  font: inherit;
+  line-height: 1.7;
+  text-align: left;
+  background: transparent;
+  color: inherit;
+  border: 2px solid transparent;
+  border-radius: 9px;
+  padding: 8px 10px;
+  margin: 3px 0;
+  box-shadow: none;
+}
+
+.sentence:hover {
+  background: #f5f1dc;
+}
+
+.sentence.selected {
+  background: #fff0a6;
+  border-color: #bf930b;
+  color: #332b08;
+}
+
+.sentence:focus-visible {
+  outline: 3px solid #4c4b86;
+  outline-offset: 2px;
+}

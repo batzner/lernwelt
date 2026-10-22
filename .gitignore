@@ -1,0 +1,14 @@
+# Allowlist: the repo is public, so only deployed site files are committed.
+/*
+!/.gitignore
+!/.nojekyll
+!/AGENTS.md
+!/*.html
+!/css/
+!/js/
+!/*.svg
+!/*.png
+!/audio/
+
+# Never commit secrets, even if a rule above would match.
+*.scrt

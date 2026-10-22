@@ -1,0 +1,232 @@
+header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
+}
+[hidden] {
+  display: none !important;
+}
+.task h1 {
+  font-size: clamp(28px, 4.8vw, 40px);
+  margin: 0 0 14px;
+}
+.task h1:focus,
+#table-title:focus {
+  outline-offset: 6px;
+}
+.table-guide li {
+  margin: 8px 0;
+}
+.mission-icon {
+  font-size: 34px;
+}
+.mission-stars {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 10px 0;
+}
+.mission-stars > span {
+  display: flex;
+  flex-direction: column;
+}
+.mission {
+  border-top: 6px solid #4e8092;
+}
+.direction {
+  padding: 12px 16px;
+  background: #e5eff5;
+  border-radius: 12px;
+  font-weight: 750;
+}
+.table-rule {
+  border-left: 5px solid #c79c44;
+  padding: 12px 18px;
+  background: #fff6df;
+}
+.table-scroll {
+  overflow-x: auto;
+  border: 2px solid #9db4bf;
+  border-radius: 14px;
+}
+.learning-table {
+  width: 100%;
+  min-width: 590px;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: 19px;
+}
+.learning-table caption {
+  text-align: left;
+  padding: 14px;
+  background: #f1f5f5;
+  font-weight: 750;
+}
+.learning-table th,
+.learning-table td {
+  border-right: 1px solid #aebfc6;
+  border-top: 1px solid #aebfc6;
+  padding: 12px;
+  text-align: center;
+  vertical-align: middle;
+}
+.learning-table tr > :last-child {
+  border-right: 0;
+}
+.learning-table thead th {
+  background: #dcebf1;
+  font-size: 17px;
+  line-height: 1.45;
+}
+.learning-table tbody th {
+  background: #edf3f3;
+  white-space: nowrap;
+}
+.learning-table tbody tr:nth-child(even) td {
+  background: #f6f8f5;
+}
+.table-cell {
+  width: 100%;
+  padding: 12px 8px;
+  font-size: 20px;
+  border: 2px solid #aebfc6;
+}
+.table-cell[aria-pressed="true"],
+.choice[aria-pressed="true"] {
+  border: 3px solid #6f4a9a;
+  background: #ede1ff;
+  color: #3c2460;
+  box-shadow: 0 0 0 2px #6f4a9a30;
+}
+.table-cell.cell-correct,
+.choice.choice-correct {
+  border: 3px solid #377443;
+  background: #ddf2d9;
+  color: #1d5428;
+}
+.table-cell:disabled,
+.choice:disabled {
+  opacity: 1;
+}
+.table-field {
+  margin: 16px 0;
+}
+.table-field label {
+  display: block;
+  font-weight: 750;
+  font-size: 21px;
+  margin-bottom: 10px;
+}
+.table-field input {
+  font: inherit;
+  font-size: 23px;
+  width: min(100%, 350px);
+  min-width: 0;
+  min-height: 56px;
+  padding: 12px;
+  border: 2px solid #77999b;
+  border-radius: 12px;
+  color: #183e40;
+  background: #fff;
+}
+.table-field input[aria-invalid="true"] {
+  border-color: #a83e2e;
+  background: #fff0ed;
+}
+.table-field input[aria-invalid="false"] {
+  border-color: #377443;
+  background: #ddf2d9;
+  color: #1d5428;
+}
+.table-field input:disabled {
+  opacity: 1;
+  -webkit-text-fill-color: #183e40;
+}
+.table-field.compact {
+  margin: 0;
+  min-width: 105px;
+}
+.compact input {
+  width: 100%;
+  max-width: 160px;
+  min-width: 96px;
+  text-align: center;
+  padding: 10px 6px;
+}
+.compact .field-result {
+  font-size: 14px;
+  line-height: 1.4;
+  max-width: 190px;
+}
+.table-choices {
+  display: grid;
+  gap: 12px;
+}
+.choice {
+  text-align: left;
+  justify-content: flex-start;
+  line-height: 1.6;
+}
+.step-reward {
+  border: 2px solid #cb9b23;
+  background: #fff6d6;
+  border-radius: 16px;
+  padding: 20px;
+  margin: 20px 0;
+}
+.solution-lines {
+  white-space: pre-line;
+}
+summary {
+  cursor: pointer;
+  font-weight: 750;
+  min-height: 48px;
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+.table-scroll:focus-visible,
+summary:focus-visible {
+  outline: 4px solid #b3761b;
+  outline-offset: 3px;
+}
+@media (max-width: 600px) {
+  header {
+    padding: 16px;
+  }
+  .card {
+    padding: 16px;
+  }
+  .table-scroll-note {
+    font-size: 14px;
+  }
+  .learning-table th,
+  .learning-table td {
+    padding: 9px;
+  }
+  .hint-head {
+    flex-wrap: wrap;
+  }
+  .mission-stars {
+    gap: 14px;
+  }
+}
+
+.work-input {
+  font: inherit;
+  width: 110px;
+  min-height: 54px;
+  padding: 10px;
+  border: 2px solid #77999b;
+  border-radius: 10px;
+  background: white;
+}

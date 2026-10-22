@@ -1,0 +1,28 @@
+.lesson { background:white; border:2px solid #d3e1dc; border-radius:22px; margin:20px 0; padding:clamp(16px,4vw,30px); }
+button, select, input, textarea { font:inherit; color:inherit; }
+button, select { min-height:46px; padding:9px 14px; background:#f2f7f5; border:2px solid #a3bbb3; border-radius:12px; }
+button { cursor:pointer; font-weight:700; }
+button:disabled { opacity:.55; cursor:default; }
+button.primary { background:#205f50; color:white; }
+button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible { outline:3px solid #cf7300; outline-offset:3px; }
+.actions { display:flex; flex-wrap:wrap; gap:10px; margin:16px 0; }
+textarea, input[type=text] { display:block; width:100%; padding:12px; border:2px solid #a3bbb3; border-radius:10px; margin:8px 0; }
+.good,.bad { padding:12px; border-radius:10px; font-weight:700; }
+.good { background:#d9f3de; color:#164d2a; }
+.bad { background:#fde6e3; color:#822b24; }
+details { margin:15px 0; }
+summary { cursor:pointer; font-weight:750; padding:8px 0; }
+.lesson h2 { margin-top:0; }
+.verse { white-space:pre-wrap; font-size:1.25rem; line-height:1.8; }
+.checklist label { display:block; margin:12px 0; }
+.checklist input { width:20px; height:20px; vertical-align:middle; }
+.word-card { font-size:1.7rem; font-weight:800; }
+.choice-list button { min-width: min(100%, 8rem); }
+.choice-list button.good { background:#d9f3de; color:#164d2a; border-color:#488653; opacity:1; }
+.choice-list button.bad { background:#fde6e3; color:#822b24; border-color:#bb5c52; }
+.copy-passage { max-width: 64ch; font-size: clamp(1.15rem, 3vw, 1.45rem); line-height:1.8; }
+.choice-list button[aria-pressed=true] { background:#205f50; color:white; border-color:#205f50; }
+.exercise-stars { color:#263e32; margin:14px 0; }
+.earned-stars, .empty-stars { font-size:1.4rem; letter-spacing:.08em; }
+.earned-stars { color:#8a5400; }
+.empty-stars { color:#66766e; }
