@@ -1,0 +1,294 @@
+:root {
+  font-family: system-ui, sans-serif;
+  color: #223f35;
+  background: #f6f5ed;
+}
+
+header {
+  padding: 20px 5vw;
+  background: #205f50;
+  color: white;
+  font-weight: 800;
+}
+
+main {
+  max-width: 1080px;
+  margin: auto;
+  padding: 24px;
+}
+
+h1 {
+  font-size: clamp(30px, 5vw, 48px);
+  margin: 22px 0 10px;
+}
+
+h2 {
+  font-size: 26px;
+}
+
+button,
+.button {
+  font: inherit;
+  font-weight: 750;
+  cursor: pointer;
+  border: 2px solid #b2c5b5;
+  border-radius: 13px;
+  padding: 14px 18px;
+  background: white;
+  color: #244a39;
+  min-height: 54px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+button:focus-visible,
+a:focus-visible,
+summary:focus-visible {
+  outline: 3px solid #574a98;
+  outline-offset: 3px;
+}
+
+.forward {
+  font-size: 22px;
+  min-height: 64px;
+  min-width: 200px;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  background: #e6ebe5;
+  color: #526353;
+  border-color: #a4b4a5;
+}
+
+.tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 18px;
+}
+
+.card {
+  background: white;
+  border: 1px solid #d3dfd2;
+  border-radius: 22px;
+  padding: 24px;
+  margin: 20px 0;
+}
+
+.mission {
+  display: block;
+  text-align: left;
+  width: 100%;
+  padding: 24px;
+  min-height: 220px;
+}
+
+.mission small {
+  display: block;
+  font-size: 15px;
+  margin: 10px 0;
+}
+
+.stars {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.reward-star {
+  vertical-align: middle;
+  flex: none;
+}
+
+.eyebrow {
+  font-size: 13px;
+  letter-spacing: 0.1em;
+  font-weight: 850;
+  color: #5a705d;
+}
+
+.task {
+  background: #fff1bf;
+  border: 2px solid #c7a44f;
+  border-radius: 18px;
+  padding: 22px;
+  scroll-margin-top: 16px;
+}
+
+.task p {
+  font-size: 20px;
+  margin: 8px 0;
+}
+
+.task h2 {
+  margin: 0 0 12px;
+}
+
+.story button {
+  display: block;
+  border-color: transparent;
+  text-align: left;
+  width: 100%;
+  font-weight: 450;
+  font-size: 20px;
+  line-height: 1.65;
+  padding: 10px 12px;
+  margin: 4px 0;
+}
+
+.story button.marked {
+  background: #fff0a6;
+  border-color: #ba951c;
+}
+
+.answers {
+  display: grid;
+  gap: 12px;
+}
+
+.answers button {
+  justify-content: flex-start;
+  font-size: 20px;
+  text-align: left;
+}
+
+.answers .picked {
+  background: #e5e1fa;
+  border-color: #6c5ba1;
+}
+
+.answers .correct {
+  background: #dcf2d9;
+  border-color: #24723b;
+}
+
+.feedback {
+  padding: 18px;
+  border-radius: 14px;
+  background: #eef1ed;
+  line-height: 1.65;
+  font-size: 19px;
+}
+
+.feedback.good {
+  background: #ddf2d9;
+  color: #215a2d;
+  border: 2px solid #468449;
+}
+
+.feedback.bad {
+  background: #ffe2dd;
+  color: #852c20;
+  border: 2px solid #bc5b46;
+}
+
+.feedback.neutral {
+  background: #eef1ed;
+  border: 2px solid #c8d2c5;
+}
+
+.hint {
+  padding: 20px;
+  background: #fff4cc;
+  border: 2px solid #ccac57;
+  border-radius: 16px;
+  margin: 18px 0;
+}
+
+.hint-head {
+  display: flex;
+  gap: 15px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lufra {
+  border: 1px solid #c9d7c6;
+  border-radius: 15px;
+  padding: 18px;
+  margin: 18px 0;
+  background: white;
+}
+
+.lufra summary {
+  cursor: pointer;
+  font-size: 19px;
+  font-weight: 800;
+}
+
+.lufra li {
+  line-height: 1.7;
+  margin: 12px 0;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px;
+}
+
+.wallet {
+  display: flex;
+  gap: 9px;
+  align-items: center;
+  font-weight: 800;
+}
+
+textarea {
+  width: 100%;
+  border: 2px solid #b5c7b6;
+  border-radius: 12px;
+  padding: 14px;
+  font: inherit;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.small {
+  font-size: 15px;
+  color: #536a58;
+}
+
+.garden {
+  max-width: 340px;
+  width: 100%;
+  display: block;
+  margin: auto;
+}
+
+.garden text {
+  font: 18px system-ui;
+  fill: #294d35;
+}
+
+footer {
+  padding: 24px 0;
+  line-height: 1.6;
+  font-size: 14px;
+  color: #657466;
+}
+
+@media (max-width: 740px) {
+  main {
+    padding: 16px;
+  }
+  .layout {
+    grid-template-columns: 1fr;
+  }
+  .card {
+    padding: 18px;
+  }
+  .task {
+    padding: 18px;
+  }
+}

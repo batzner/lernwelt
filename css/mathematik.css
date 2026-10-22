@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+p {
+  line-height: 1.65;
+}
+
+.mission strong {
+  display: block;
+  font-size: 23px;
+  margin: 12px 0;
+}
+
+:root {
+  --accent: #205f50;
+  --soft: #e3eee5;
+}
